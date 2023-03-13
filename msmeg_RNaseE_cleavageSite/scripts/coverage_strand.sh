@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd ../RNAseq_processing/bowtie2_genome/coverage_nt
-
-paste con_Atc_0_A1_plus_fragment.coverage con_Atc_0_A2_plus_fragment.coverage con_Atc_0_B2_plus_fragment.coverage con_noAtc_0_A1_plus_fragment.coverage con_noAtc_0_A2_plus_fragment.coverage con_noAtc_0_B2_plus_fragment.coverage EKD_Atc_0_A1_plus_fragment.coverage EKD_Atc_0_A2_plus_fragment.coverage EKD_Atc_0_B2_plus_fragment.coverage EKD_noAtc_0_A1_plus_fragment.coverage EKD_noAtc_0_A2_plus_fragment.coverage EKD_noAtc_0_B2_plus_fragment.coverage | cut -f1-3,6,9,12,15,18,21,24,27,30,33,36 > plus_fragment_coverage.txt
-
-paste con_Atc_0_A1_minus_fragment.coverage con_Atc_0_A2_minus_fragment.coverage con_Atc_0_B2_minus_fragment.coverage con_noAtc_0_A1_minus_fragment.coverage con_noAtc_0_A2_minus_fragment.coverage con_noAtc_0_B2_minus_fragment.coverage EKD_Atc_0_A1_minus_fragment.coverage EKD_Atc_0_A2_minus_fragment.coverage EKD_Atc_0_B2_minus_fragment.coverage EKD_noAtc_0_A1_minus_fragment.coverage EKD_noAtc_0_A2_minus_fragment.coverage EKD_noAtc_0_B2_minus_fragment.coverage | cut -f1-3,6,9,12,15,18,21,24,27,30,33,36 > minus_fragment_coverage.txt
